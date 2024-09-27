@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello World</h1>')
 })
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
 app.get('/info', (req, res) => {
   const numPersons = Person.length
   const time = new Date(Date.now())

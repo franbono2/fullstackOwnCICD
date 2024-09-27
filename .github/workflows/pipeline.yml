@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm run install:all
       - name: Check style
-        run: npm run eslint
+        run: npm run lint
       - name: Build
         run: npm run build
   deploy:
